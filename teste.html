@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/teste.css">
+</head>
+
+<body>
+<center>
+  <header>
+    <div class="container">
+      <h1 id="titulo">
+        Lista de Tarefas
+      </h1>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <h2>Minhas Tarefas</h2>
+      <input id="filtro" placeholder="digite o nome de uma tarefa para filtrar">
+      <table>
+        <thead>
+          <tr>
+            <th>Tarefas</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-pacientes">
+          <tr class="paciente">
+            <td class="info-nome">Primeira Tarefa</td>
+   
+
+          </tr>
+
+        </tbody>
+      </table>
+
+    </section>
+
+    <section class="container">
+      <h2>Adicionar Tarefa</h2>
+      <span id="mensagem-erro"></span>
+      <form id="form-paciente">
+        <div class="grupo">
+          <label for="nome">Tarefa</label>
+          <input type="text" id="nome" name="nome" placeholder="digite o nome a tarefa" class="campo" required>
+        </div>
+        <button id="botao-cadastrar">Adicionar Tarefa</button></center>
+      </form>
+
+    </section>
+  </main>
+
+</body>
+
+<script src="js/teste.js"></script>
+<script src="js/filtrar.js"></script>
+<script src="js/removertarefa.js"></script>
+
+
+</html>
